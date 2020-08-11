@@ -1,0 +1,15 @@
+{
+  "name": "get-baked-brownies",
+  "version": "1.0.0",
+  "description": "Custom eleventy-based site for Get Baked Brownies",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Steven Park",
+    "email": "info@stevenpark.co.uk",
+    "url": "https://stevenpark.co.uk/"
+  },
+  "license": "ISC"
+}
