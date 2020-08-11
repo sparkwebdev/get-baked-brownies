@@ -1,0 +1,17 @@
+{
+  "title": "Get Baked Brownies | Brownies to die for",
+  "url": "https://getbakedbrownies.co.uk",
+  "description": "Hand made-brownies",
+  "author": {
+    "name": "Get Baked Brownies",
+    "email": "info@getbakedbrownies.co.uk",
+    "location": "123 Baker Street, London, UK",
+    "image": "/img/profile.png",
+    "telephone": "07711 223 344",
+    "telephoneInternational": "+447711233455",
+    "socialLinks": {
+      "Instagram": "https://www.instagram.com/getbakedbrownies/"
+    }
+  },
+  "global": {}
+}
