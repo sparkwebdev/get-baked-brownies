@@ -1,5 +1,8 @@
 module.exports = function(eleventyConfig) {
 
+  // Layout aliases
+  eleventyConfig.addLayoutAlias("base", "layouts/base.html");
+
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
 
@@ -8,7 +11,9 @@ module.exports = function(eleventyConfig) {
   });
 
   // Assets
-  eleventyConfig.addPassthroughCopy("./src/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/img");
+  eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy("./src/css/fonts");
 
   return {
     markdownTemplateEngine: 'njk',
