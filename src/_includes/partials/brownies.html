@@ -1,0 +1,24 @@
+<ul class="[ brownies ]">
+
+  {% for product in metadata.content.brownies.products %}
+  <li>
+    <h3>{{ product.title }}</h3>
+    {% if product.description %}
+      <p>{{ product.description }}</p>
+    {% endif %}
+    {% if product.pricePrefix or product.price or product.priceSuffix %}
+      <p>
+        <strong>
+          {% if product.pricePrefix %}<span>{{ product.pricePrefix }}</span>{% endif %}
+          {% if product.price %}<span>{{ product.price }}</span>{% endif %}
+          {% if product.priceSuffix %}<span>{{ product.priceSuffix }}</span>{% endif %}
+        </strong>
+      </p>
+    {% endif %}
+    {% if product.image %}
+      <img src="/img/{{ product.image }}" alt="" role="presentation">
+    {% endif %}
+  </li>
+  {% endfor %}
+
+</ul>

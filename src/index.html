@@ -1,4 +1,39 @@
 ---
 layout: base
 ---
-<h1>Hello World</h1>
+
+
+<div class="section section--intro">
+
+  <h2 class="section__title">{{ metadata.content.intro.title }}</h2>
+
+  {% include "partials/slideshow.html" %}
+
+</div>
+
+<div id="our-brownies" class="section section--brownies">
+
+  <h2 class="section__title">{{ metadata.content.brownies.title }}</h2>
+
+  {% include "partials/brownies.html" %}
+
+</div>
+
+<div class="section section--contact">
+
+  <h2 class="section__title">{{ metadata.content.contact.title }}</h2>
+
+  {% include "partials/contact-details.html" %}
+
+  {% include "partials/enquiry-form.html" %}
+
+</div>
+
+<div class="section section--instagram">
+
+  <h2 class="section__title">{{ metadata.content.instagram.title }}</h2>
+
+  {% include "partials/instagram.html" %}
+
+</div>
+

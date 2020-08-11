@@ -1,0 +1,9 @@
+<ul>
+
+  {% for image in metadata.content.instagram.images %}
+  <li>
+    <img src="/img/{{ image }}" alt="" role="presentation">
+  </li>
+  {% endfor %}
+
+</ul>

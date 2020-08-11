@@ -1,7 +1,7 @@
 {
-  "title": "Get Baked Brownies | Brownies to die for",
+  "title": "Get Baked Brownies",
   "url": "https://getbakedbrownies.co.uk",
-  "description": "Hand made-brownies",
+  "description": "Brownies to die for",
   "author": {
     "name": "Get Baked Brownies",
     "email": "info@getbakedbrownies.co.uk",
@@ -13,5 +13,55 @@
       "Instagram": "https://www.instagram.com/getbakedbrownies/"
     }
   },
-  "global": {}
+  "content": {
+    "intro": {
+      "title": "Hand-made brownies to die for",
+      "images": [
+        "brownies-01.jpg",
+        "brownies-02.jpg",
+        "brownies-03.jpg"
+      ]
+    },
+    "brownies": {
+      "title": "Our delicious brownies",
+      "products": [
+        {
+          "title": "Ferrero Rocher",
+          "description": "Our take on that family favourite. We've mixed hazelnut praline through the brownie, along with chopped, caramelised hazelnuts and finished top on with a super crackly and crunchy topping.",
+          "image": "get-baked-brownie--ferrero-rocher.png",
+          "pricePrefix": "Only £",
+          "price": "24.99",
+          "priceSuffix": "(per box of 12)"
+        },
+        {
+          "title": "Biscoff",
+          "description": "Our signature dark chocolate brownie packed full of white and milk chocolate chips and then coated with all three types of chocolate on top. Our decadent take on a classic",
+          "image": "get-baked-brownie--biscoff.png",
+          "pricePrefix": "Only £",
+          "price": "25.99",
+          "priceSuffix": "(per box of 12)"
+        },
+        {
+          "title": "Malteser",
+          "description": "2 fudgy and rich dark chocolate brownies with a liquid salted caramel centre and a shimmery gold finish on top.",
+          "image": "get-baked-brownie--malteser.png",
+          "pricePrefix": "Only £",
+          "price": "26.99",
+          "priceSuffix": "(per box of 12)"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us"
+    },
+    "instagram": {
+      "title": "Our Instagram",
+      "images": [
+        "brownies-04.jpg",
+        "brownies-05.jpg",
+        "brownies-06.jpg",
+        "brownies-07.jpg"
+      ]
+    }
+  }
 }
