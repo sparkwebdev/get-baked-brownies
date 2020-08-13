@@ -6,8 +6,17 @@
 
     {% include "partials/meta.html" %}
 
+    {%- set css -%}
+      {% include "../../css/reset.css" %}
+      {% include "../../css/common.css" %}
+      {% include "../../css/styles.css" %}
+    {%- endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+
     {# <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" /> #}
-    <link rel="stylesheet" media="print" href="/css/styles.css?{{ assetHash }}" onload="this.media='all'" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   </head>
 
@@ -16,7 +25,7 @@
     
       {% include "partials/header.html" %}
 
-      <main tabindex="-1" id="main-content">
+      <main>
         {{ content | safe }}
       </main>
 

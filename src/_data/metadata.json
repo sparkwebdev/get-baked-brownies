@@ -6,7 +6,7 @@
     "name": "Get Baked Brownies",
     "email": "info@getbakedbrownies.co.uk",
     "location": "123 Baker Street, London, UK",
-    "image": "/img/profile.png",
+    "image": "/img/logo.png",
     "telephone": "07711 223 344",
     "telephoneInternational": "+447711233455",
     "socialLinks": {
@@ -29,24 +29,24 @@
           "title": "Ferrero Rocher",
           "description": "Our take on that family favourite. We've mixed hazelnut praline through the brownie, along with chopped, caramelised hazelnuts and finished top on with a super crackly and crunchy topping.",
           "image": "get-baked-brownie--ferrero-rocher.png",
-          "pricePrefix": "Only £",
-          "price": "24.99",
+          "pricePrefix": "Only ",
+          "price": "£24.99",
           "priceSuffix": "(per box of 12)"
         },
         {
           "title": "Biscoff",
           "description": "Our signature dark chocolate brownie packed full of white and milk chocolate chips and then coated with all three types of chocolate on top. Our decadent take on a classic",
           "image": "get-baked-brownie--biscoff.png",
-          "pricePrefix": "Only £",
-          "price": "25.99",
+          "pricePrefix": "Only ",
+          "price": "£25.99",
           "priceSuffix": "(per box of 12)"
         },
         {
           "title": "Malteser",
           "description": "2 fudgy and rich dark chocolate brownies with a liquid salted caramel centre and a shimmery gold finish on top.",
           "image": "get-baked-brownie--malteser.png",
-          "pricePrefix": "Only £",
-          "price": "26.99",
+          "pricePrefix": "Only ",
+          "price": "£26.99",
           "priceSuffix": "(per box of 12)"
         }
       ]

@@ -1,7 +1,13 @@
+const CleanCSS = require('clean-css');
+
 module.exports = function(eleventyConfig) {
 
   // Layout aliases
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
+
+  eleventyConfig.addFilter('cssmin', function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);

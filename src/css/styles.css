@@ -1,0 +1,248 @@
+
+      body {
+        background: #fff url(img/bg-brownies--alt-small.png);
+        background-size: 1200px auto;
+      }
+      .site-wrap {
+        {# background-image: linear-gradient(180deg, rgba(255,255,255, 0.25), #fffff2); #}
+        
+      }
+
+      /* Shared */
+      .wrapper {
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+      }
+      .section {
+        padding: 0 var(--size-70) var(--size-90) var(--size-70);
+        text-align: center;
+        border-top: solid 12px var(--brand-1-mid);
+      }
+      .section__wrapper {
+        text-align: left;
+      }
+      .section__title:not(.section__title--inline),
+      .section__title--inline span {
+        color: var(--brand-1-mid);
+        background-color: var(--brand-4-mid);
+        padding: var(--size-40) var(--size-70) var(--size-10) var(--size-70);
+        display: inline-block;
+        box-shadow: -6px 6px 0 var(--brand-3-mid);
+        line-height: 1;
+      }
+      .section__title:not(.section__title--inline) {
+        margin-bottom: var(--size-80);
+        position: relative;
+        top: -2.8rem;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: var(--size-80);
+      }
+
+      .section__title--inline {
+        display: flex;
+        flex-direction: column;
+        font-size: var(--size-90);
+        align-items: flex-start;
+      }
+      .section__title--inline span {
+        margin-bottom: var(--size-50);
+      }
+
+      .flow > * + * {
+        margin-top: var(--flow-space);
+      }
+
+      .btn {
+        background-color: var(--brand-1);
+        color: var(--brand-2-light);
+        padding: var(--size-50) var(--size-50) var(--size-40) var(--size-50);
+        min-width: 6em;
+        text-align: center;
+        line-height: 1;
+        display: inline-block;
+        font-size: var(--size-60);
+        border-radius: 16px;
+        text-decoration: none;
+        box-shadow: -6px 6px 0 var(--brand-3-mid);
+        text-shadow: -3px 3px 0 var(--brand-3-mid);
+        font-weight: bold;
+      }
+      .btn:hover {
+        background-color: var(--brand-1-dark);
+        color: var(--brand-4-mid);
+        box-shadow: -6px 6px 0 var(--brand-3);
+        text-shadow: -3px 3px 0 var(--brand-3);
+      }
+
+      .main-header {
+        {# background-image: linear-gradient(180deg, var(--brand-1-mid), 50%, var(--brand-1-mid), 50%, var(--brand-2-mid)); #}
+        z-index: 0;
+        position: relative;
+      }
+      {# .main-header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: url(img/bg-stripe.jpg);
+        background-size: auto 50%;
+        z-index: -3;
+        opacity: 0.05;
+      } #}
+      .main-header .wrapper {
+        padding-bottom: 16%;
+      }
+      .main-header__navigation {
+        padding: var(--size-60) var(--size-90) 0 var(--size-90);
+        position: relative;
+      }
+      .main-header__navigation::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 100px;
+        z-index: -1;
+        background: var(--brand-4-mid);
+        height: 0;
+        padding-bottom: 100%;
+        border-radius: 50%;
+        box-shadow: 0 20px var(--brand-2-mid);
+      }
+      .main-header__navigation-list {
+        display: flex;
+        justify-content: center;
+      }
+      .main-header__branding {
+        background: url(/img/logo.png);
+        width: 400px;
+        height: 400px;
+        background-size: 100% 100%;
+        order: 2;
+      }
+      .main-header__branding  ~ * {
+        order: 1;
+      }
+      .main-header__branding  ~ * ~ * {
+        order: 3;
+      }
+
+      .slideshow {
+        position: absolute;
+        top: 0;
+        left: 9%;
+        right: 0;
+        height: 0;
+        width: 82%;
+        padding-bottom: 82%;
+        border-radius: 50%;
+        box-shadow: 0 16px 0 var(--brand-1-mid);
+        overflow: hidden;
+        z-index: -2;
+      }
+      .slideshow img {
+        width: 100%;
+        height: auto;
+      }
+
+      .section--instagram {
+        background-color: var(--brand-4);
+      }
+      .instagram {
+        text-align: center;
+      }
+      .instagram__feed {
+        display: flex;
+        justify-content: space-between;
+      }
+      .instagram__feed li {
+        width: 22%;
+      }
+      .instagram__feed img {
+        border: solid 8px var(--brand-1);
+        box-shadow: -6px 6px 0 var(--brand-1-mid);
+      }
+      .instagram__link {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+      }
+
+      .section--brownies {
+        {# background-color: rgba(255, 255, 255, 0.75); #}
+        {# margin-bottom: calc(var(--size-90) * 3); #}
+        {# border: solid 9px var(--brand-1-mid); #}
+        background: var(--brand-4-light)
+      }
+      .brownies li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: var(--size-90);
+      }
+      .brownies li:not(:last-child) {
+        margin-bottom: calc(var(--size-70) * -1);
+      }
+      .brownies li > div {
+        max-width: 32rem;
+        margin-right: var(--size-70);
+        margin-left: var(--size-70);
+      }
+      .brownies li:nth-child(2n+2) > div {
+        order: 1;
+      }
+
+
+      .brownies__title {
+        color: var(--brand-2-mid);
+        font-size: var(--size-80);
+      }
+      .brownies__description {
+        font-size: var(--size-50);
+        margin-top: var(--size-40);
+        margin-bottom: var(--size-40);
+      }
+      .brownies__details {
+        font-size: var(--size-60);
+      }
+      .brownies__prefix {
+        vertical-align: middle;
+
+      }
+      .brownies__price {
+        font-size: var(--size-80);
+        vertical-align: middle;
+        color: var(--brand-1-mid);
+      }
+      .brownies__suffix {
+        font-size: var(--size-50);
+        vertical-align: middle;
+      }
+      .brownies__image {
+        max-width: 500px;
+      }
+
+      .section--contact {
+        background: var(--brand-2);
+      }
+
+      .main-footer {
+        text-align: center;
+        padding: 0 var(--size-70) var(--size-70) var(--size-70);
+        background-color: var(--brand-1-dark);
+        color: #fff;
+      }
+      .main-footer__logo {
+        margin: 0 auto -65px auto;
+        width: 180px;
+        position: relative;
+        top: -90px;
+      }
+      .main-footer a {
+        color: #fff;
+      }

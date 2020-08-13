@@ -1,22 +1,24 @@
-<ul class="[ brownies ]">
+<ul class="brownies">
 
   {% for product in metadata.content.brownies.products %}
   <li>
-    <h3>{{ product.title }}</h3>
-    {% if product.description %}
-      <p>{{ product.description }}</p>
-    {% endif %}
-    {% if product.pricePrefix or product.price or product.priceSuffix %}
-      <p>
-        <strong>
-          {% if product.pricePrefix %}<span>{{ product.pricePrefix }}</span>{% endif %}
-          {% if product.price %}<span>{{ product.price }}</span>{% endif %}
-          {% if product.priceSuffix %}<span>{{ product.priceSuffix }}</span>{% endif %}
-        </strong>
-      </p>
-    {% endif %}
+    <div>
+      <h3 class="brownies__title">{{ product.title }}</h3>
+      {% if product.description %}
+        <p class="brownies__description">{{ product.description }}</p>
+      {% endif %}
+      {% if product.pricePrefix or product.price or product.priceSuffix %}
+        <p class="brownies__details">
+          <strong>
+            {% if product.pricePrefix %}<span class="brownies__prefix">{{ product.pricePrefix }}</span>{% endif %}
+            {% if product.price %}<span class="brownies__price">{{ product.price }}</span>{% endif %}
+            {% if product.priceSuffix %}<span class="brownies__suffix">{{ product.priceSuffix }}</span>{% endif %}
+          </strong>
+        </p>
+      {% endif %}
+    </div>
     {% if product.image %}
-      <img src="/img/{{ product.image }}" alt="" role="presentation">
+      <img class="brownies__image" src="/img/{{ product.image }}" alt="" role="presentation">
     {% endif %}
   </li>
   {% endfor %}

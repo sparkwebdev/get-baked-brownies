@@ -2,30 +2,29 @@
 layout: base
 ---
 
+<div class="section section--brownies ">
 
-<div class="section section--intro">
+  <h2 id="our-brownies" class="section__title">{{ metadata.content.brownies.title }}</h2>
 
-  <h2 class="section__title">{{ metadata.content.intro.title }}</h2>
+  <div class="section__wrapper wrapper">
 
-  {% include "partials/slideshow.html" %}
+    {% include "partials/brownies.html" %}
 
-</div>
-
-<div id="our-brownies" class="section section--brownies">
-
-  <h2 class="section__title">{{ metadata.content.brownies.title }}</h2>
-
-  {% include "partials/brownies.html" %}
+  </div>
 
 </div>
 
 <div class="section section--contact">
 
-  <h2 class="section__title">{{ metadata.content.contact.title }}</h2>
+  <h2 id="contact-us" class="section__title">Contact us</h2>
 
-  {% include "partials/contact-details.html" %}
+  <div class="section__wrapper wrapper">
 
-  {% include "partials/enquiry-form.html" %}
+    {% include "partials/contact-details.html" %}
+
+    {% include "partials/enquiry-form.html" %}
+
+  </div>
 
 </div>
 
@@ -33,7 +32,11 @@ layout: base
 
   <h2 class="section__title">{{ metadata.content.instagram.title }}</h2>
 
-  {% include "partials/instagram.html" %}
+  <div class="section__wrapper wrapper flow">
+
+    {% include "partials/instagram.html" %}
+
+  </div>
 
 </div>
 

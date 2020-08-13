@@ -1,0 +1,78 @@
+
+:root {
+  --brand-1         : #f300ff;
+  --brand-1-mid     : #f972ea;
+  --brand-1-light   : #fcd2f8;
+  --brand-1-dark    : #b138c3;
+  --brand-2         : #2ca452;
+  --brand-2-mid     : #3ed786;
+  --brand-2-light   : #4cfeac;
+  --brand-3         : #5c1e00;
+  --brand-3-mid     : #ab561e;
+  --brand-3-light   : #e7a880;
+  --brand-4         : #dae044;
+  --brand-4-mid     : #faff69;
+  --brand-4-light   : #fffff2;
+  --tone-20         : #ddd;
+  --tone-40         : #aaa;
+  --tone-60         : #666;
+  --tone-80         : #333;
+  --size-05         : 0.23rem;
+  --size-10         : 0.42rem;
+  --size-20         : 0.56rem;
+  --size-30         : 0.75rem;
+  --size-40         : 1rem;
+  --size-50         : 1.33rem;
+  --size-60         : 1.77rem;
+  --size-70         : 2.36rem;
+  --size-80         : 3.15rem;
+  --size-90         : 4.2rem;
+  --flow-space      : 3.15rem;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* a {
+  color: currentColor;
+  text-decoration-color: get-color('brand-3');
+  &:hover,
+  &:focus {
+    text-decoration-color: get-color('brand-2');
+  }
+} */
+
+/* :focus {
+  outline: 2px dashed get-color('brand-2');
+  outline-offset: 1px;
+} */
+
+/* h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  line-height: 1.25;
+} */
+
+::selection {
+  color: #fff;
+  background: rgba(25,25,25,0.9);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}

@@ -1,13 +1,19 @@
-<header>
+<header class="main-header">
 
-  <h1>{{ metadata.title }}</h1>
+  <div class="wrapper">
 
-  <nav>
-    <ul>
-      <li><a href="#main-body">Home</a></li>
-      <li><a href="#our-brownies">Our Brownies</a></li>
-      <li><a href="#contact-us">Contact Us</a></li>
-    </ul>
-  </nav>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-list">
+        <li class="main-header__branding"><a href="#main-body"><span class="visually-hidden">Back to top</span></a></li>
+        <li><a href="#our-brownies" class="btn">Our Brownies</a></li>
+        <li><a href="#contact-us" class="btn">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="section__title section__title--inline"><span class="visually-hidden">{{ metadata.title }}. </span><span>Hand-made </span><span>brownies </span><span>to die for</span></h1>
+
+    {% include "partials/slideshow.html" %}
+
+  </div>
 
 </header>
