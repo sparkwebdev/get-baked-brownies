@@ -77,7 +77,6 @@
   height: 0;
   width: 100%;
   padding-bottom: 80%;
-  border-radius: var(--size-70);
   border: solid var(--size-30) var(--brand-2-mid);
   box-shadow: calc(var(--size-10) * -1) var(--size-20) 0 var(--brand-1-mid);
   overflow: hidden;
