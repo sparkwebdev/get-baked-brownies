@@ -187,8 +187,6 @@ button, .btn {
 button:hover, .btn:hover,
 button:focus, .btn:focus {
   background-color: var(--brand-1-dark);
-  box-shadow: calc(var(--size-10)*-0.5) calc(var(--size-10) / 2) 0 var(--brand-3);
-  text-shadow: calc(var(--size-05)*-0.5) calc(var(--size-05) / 2) 0 var(--brand-3);
-  border-top: 5px solid;
-  border-right: 5px solid;
+  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3);
+  text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3);
 }
