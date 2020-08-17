@@ -128,6 +128,7 @@ h4 {
 .section .wrapper {
   padding: 0 var(--size-70) var(--size-90) var(--size-70);
   border: solid var(--size-30) var(--brand-2-mid);
+  box-shadow: calc(var(--size-10) * -1) var(--size-20) 0 var(--brand-1-mid);
   border-radius: var(--size-70);
   background: rgba(255, 255, 242, 0.75);
 }
@@ -186,6 +187,8 @@ button, .btn {
 button:hover, .btn:hover,
 button:focus, .btn:focus {
   background-color: var(--brand-1-dark);
-  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3);
-  text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3);
+  box-shadow: calc(var(--size-10)*-0.5) calc(var(--size-10) / 2) 0 var(--brand-3);
+  text-shadow: calc(var(--size-05)*-0.5) calc(var(--size-05) / 2) 0 var(--brand-3);
+  border-top: 5px solid;
+  border-right: 5px solid;
 }
