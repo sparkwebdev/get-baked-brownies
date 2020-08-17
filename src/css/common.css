@@ -5,7 +5,7 @@
   --brand-1-light   : #fcd2f8;
   --brand-1-dark    : #b138c3;
   --brand-2         : #2ca452;
-  --brand-2-mid     : #3ed786;
+  --brand-2-mid     : #56FF99;
   --brand-2-light   : #4cfeac;
   --brand-3         : #5c1e00;
   --brand-3-mid     : #ab561e;
@@ -30,12 +30,38 @@
   --flow-space      : 3.15rem;
 }
 
+html {
+  font-size: 55%;
+}
+@media all and (min-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media all and (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media all and (min-width: 960px) {
+  html {
+    font-size: 100%;
+  }
+}
 body {
   background: #fff;
   color: #000;
   line-height: 1.5;
-  font-size: 1.2rem;
   font-family: 'Josefin Sans', sans-serif;
+  background: #fff url(img/bg-brownies--alt-small.png);
+  background-size: 157vw auto;
+  background-position: left center;
+  font-size: 1.2rem;
+}
+@media all and (min-width: 768px) {
+  body {
+    background-size: 1200px auto;
+  }
 }
 
 /* a {
@@ -65,6 +91,17 @@ h4 {
   background: rgba(25,25,25,0.9);
 }
 
+
+/* Utilities */
+.wrapper {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -75,4 +112,69 @@ h4 {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+
+/* Shared - Sections */
+.section {
+  padding: 0 var(--size-70) calc(var(--size-90) * 2) var(--size-70);
+  text-align: center;
+  border-top: solid var(--size-30) var(--brand-1-mid);
+}
+.section__title:not(.section__title--inline),
+.section__title--inline span {
+  color: var(--brand-1-mid);
+  background-color: var(--brand-4-mid);
+  display: inline-block;
+  line-height: 1;
+  padding: var(--size-40) var(--size-60) var(--size-10) var(--size-60);
+  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3-mid);
+  text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3-mid);
+}
+.section__title:not(.section__title--inline) {
+  margin-bottom: var(--size-80);
+  position: relative;
+  top: -0.9em;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: var(--size-80);
+  font-size: clamp(1rem, 6vw, var(--size-80));
+}
+.section__title--inline {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--size-80);
+  align-items: flex-start;
+}
+.section__title--inline span {
+  margin-bottom: var(--size-40);
+}
+@media screen and (min-width: 768px) {
+  .section__title--inline {
+    font-size: var(--size-90);
+  }
+}
+
+/* Shared - Buttons */
+button, .btn {
+  background-color: var(--brand-1);
+  color: var(--brand-2-light);
+  padding: var(--size-50) var(--size-50) var(--size-40) var(--size-50);
+  min-width: 8em; /* Magic number to make buttons somewhat similar in length */
+  text-align: center;
+  line-height: 1;
+  display: inline-block;
+  font-size: var(--size-60);
+  border-radius: var(--size-40);
+  text-decoration: none;
+  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3-mid);
+  text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3-mid);
+  font-weight: bold;
+}
+button:hover, .btn:hover,
+button:focus, .btn:focus {
+  background-color: var(--brand-1-dark);
+  color: var(--brand-4-mid);
+  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3);
+  text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3);
 }

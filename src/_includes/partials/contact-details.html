@@ -1,8 +1,10 @@
-<p>
-  {{ metadata.title }}<br />
-  {{ metadata.author.location }}
-</p>
-<p>
-  <a href="mailto:{{ metadata.author.email }}">{{ metadata.author.email }}</a><br />
-  <a href="tel:{{ metadata.author.telephoneInternational }}">{{ metadata.author.telephone }}</a>
-</p>
+<div class="contact-details">
+  <p>
+    {{ metadata.title }}<br />
+    {{ metadata.author.location }}
+  </p>
+  <p>
+    <a href="mailto:{{ metadata.author.email }}">{{ metadata.author.email }}</a><br />
+    <a href="tel:{{ metadata.author.telephoneInternational }}">{{ metadata.author.telephone }}</a>
+  </p>
+</div>

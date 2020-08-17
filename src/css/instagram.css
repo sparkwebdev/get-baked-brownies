@@ -1,0 +1,30 @@
+.section--instagram {
+  background: repeating-linear-gradient(
+    -55deg,
+    var(--brand-4),
+    var(--brand-4) 10px,
+    #dfe45d 10px,
+    #dfe45d 20px
+  );
+}
+.instagram__feed {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.instagram__feed li {
+  width: 47%;
+  border: solid 8px var(--brand-1);
+  box-shadow: calc(var(--size-20) * -1) var(--size-20) 0 var(--brand-3-mid);
+}
+@media all and (max-width: 599px) {
+  .instagram__feed li:not(:first-child):not(:nth-child(2)) {
+    margin-top: 6%;
+  }
+}
+@media all and (min-width: 600px) {
+  .instagram__feed li {
+    width: 22%;
+    margin-bottom: 0;
+  }
+}

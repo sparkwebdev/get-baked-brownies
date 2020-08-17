@@ -2,11 +2,11 @@
 layout: base
 ---
 
-<div class="section section--brownies ">
+<div class="section section--brownies">
 
-  <h2 id="our-brownies" class="section__title">{{ metadata.content.brownies.title }}</h2>
+  <div class="wrapper">
 
-  <div class="section__wrapper wrapper">
+    <h2 id="our-brownies" class="section__title">{{ metadata.content.brownies.title }}</h2>
 
     {% include "partials/brownies.html" %}
 
@@ -18,7 +18,7 @@ layout: base
 
   <h2 id="contact-us" class="section__title">Contact us</h2>
 
-  <div class="section__wrapper wrapper">
+  <div class="wrapper section--contact__cols">
 
     {% include "partials/contact-details.html" %}
 
@@ -32,7 +32,7 @@ layout: base
 
   <h2 class="section__title">{{ metadata.content.instagram.title }}</h2>
 
-  <div class="section__wrapper wrapper flow">
+  <div class="wrapper flow">
 
     {% include "partials/instagram.html" %}
 

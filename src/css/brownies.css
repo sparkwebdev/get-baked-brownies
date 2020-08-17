@@ -1,0 +1,63 @@
+.section--brownies {
+  margin-top: calc(var(--size-90) * 2);
+  border: 0;
+}
+.section--brownies .wrapper {
+  border: solid var(--size-30) var(--brand-1-mid);
+  background: rgba(255, 255, 242, 0.75);
+  padding-bottom: var(--size-90);
+  padding-left:var(--size-70);
+  padding-right: var(--size-70);
+}
+.brownies__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--size-60);
+  text-align: left;
+  overflow: hidden;
+}
+
+.brownies__item:not(:first-child) .brownies__title {
+  margin-top: var(--size-70);
+}
+.brownies__content {
+  max-width: 32rem;
+}
+.brownies__title {
+  font-size: var(--size-80);
+  margin-right: -100%;
+}
+.brownies__description {
+  font-size: var(--size-50);
+  margin-top: var(--size-30);
+  margin-bottom: var(--size-60);
+}
+.brownies__details {
+  font-size: var(--size-60);
+  margin-right: -100%;
+  line-height: 1.25;
+}
+.brownies__prefix {
+  vertical-align: middle;
+}
+.brownies__price {
+  font-size: var(--size-80);
+  vertical-align: middle;
+  color: var(--brand-1-mid);
+  text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3-mid);
+}
+.brownies__suffix {
+  font-size: var(--size-50);
+  vertical-align: middle;
+}
+.brownies__image {
+  max-width: 350px;
+  width: 45%;
+  margin-left: var(--size-40);
+}
+@media screen and (max-width: 767px) {
+  .brownies__suffix {
+    display: block;
+  }
+}

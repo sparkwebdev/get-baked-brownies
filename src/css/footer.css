@@ -1,0 +1,17 @@
+
+.main-footer {
+  border-top: solid var(--size-30) var(--brand-1-mid);
+  text-align: center;
+  padding: 0 var(--size-70) var(--size-70) var(--size-70);
+  background-color: var(--brand-1-dark);
+  color: #fff;
+}
+.main-footer__logo {
+  margin: 0 auto -4rem auto;
+  width: 10rem;
+  position: relative;
+  top: -5rem;
+}
+.main-footer a {
+  color: #fff;
+}

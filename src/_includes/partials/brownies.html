@@ -1,8 +1,8 @@
 <ul class="brownies">
 
   {% for product in metadata.content.brownies.products %}
-  <li>
-    <div>
+  <li class="brownies__item">
+    <div class="brownies__content">
       <h3 class="brownies__title">{{ product.title }}</h3>
       {% if product.description %}
         <p class="brownies__description">{{ product.description }}</p>
