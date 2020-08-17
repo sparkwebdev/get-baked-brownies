@@ -1,5 +1,5 @@
 <div class="slideshow">
-  <h1 class="slideshow__title section__title section__title--inline"><span class="visually-hidden">{{ metadata.title }}. </span><span>Hand-made </span><span>brownies </span><span>to die for</span></h1>
+  <h1 class="slideshow__title section__title section__title--inline"><span class="visually-hidden">{{ metadata.title }}. </span><span>{{ metadata.content.intro.title01 }} </span><span>{{ metadata.content.intro.title02 }} </span><span>{{ metadata.content.intro.title03 }}</span></h1>
   <div class="slideshow__images">
   {% for src in metadata.content.intro.images %}
     <img class="slideshow__image" src="/img/{{ src }}" alt="" role="presentation">

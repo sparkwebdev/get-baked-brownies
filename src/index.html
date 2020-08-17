@@ -16,13 +16,17 @@ layout: base
 
 <div class="section section--contact">
 
-  <h2 id="contact-us" class="section__title">Contact us</h2>
+  <div class="wrapper">
 
-  <div class="wrapper section--contact__cols">
+    <h2 id="contact-us" class="section__title">Contact us</h2>
 
-    {% include "partials/contact-details.html" %}
+    <div class="section--contact__cols">
 
-    {% include "partials/enquiry-form.html" %}
+      {% include "partials/contact-details.html" %}
+
+      <img class="contact-details__decorative-image" src="/img/brownies-wide.jpg" alt="" role"presentation">
+
+    </div>
 
   </div>
 
@@ -30,11 +34,15 @@ layout: base
 
 <div class="section section--instagram">
 
-  <h2 class="section__title">{{ metadata.content.instagram.title }}</h2>
+  <div class="wrapper">
 
-  <div class="wrapper flow">
+    <h2 class="section__title">{{ metadata.content.instagram.title }}</h2>
 
-    {% include "partials/instagram.html" %}
+    <div class="flow">
+
+      {% include "partials/instagram.html" %}
+
+    </div>
 
   </div>
 

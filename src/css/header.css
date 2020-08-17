@@ -1,13 +1,12 @@
 /* Section - Header */
 .main-header {
-  z-index: 0;
-  position: relataive;
+  padding-left: var(--size-50);
+  padding-right: var(--size-50);
 }
 .main-header__navigation {
   position: absolute;
   padding-top: var(--size-50);
-  top: calc(var(--size-90)*-1);
-  /* top: 0; */
+  top: calc(var(--size-80)*-3);
   left: 50%;
   width: calc(100% - var(--size-60) - var(--size-60));
   z-index: 1;
@@ -18,14 +17,13 @@
   justify-content: center;
 }
 .main-header__branding {
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   max-width: 325px;
   max-height: 325px;
   margin: 0 var(--size-50);
   background: url(/img/logo.png);
   background-size: 100% 100%;
-  order: 2;
   position: relative;
 }
 .main-header__branding::before {
@@ -38,49 +36,59 @@
   z-index: -2;
   background: var(--brand-4-light);
   border-radius: 50%;
-  box-shadow: 0 var(--size-50) var(--brand-2-mid);
+  border: solid var(--size-30) var(--brand-2-mid);
 }
 .main-header__branding  ~ * {
   order: 1;
   z-index: 2;
+  margin-left: var(--size-70);
 }
 .main-header__branding  ~ * ~ * {
   order: 3;
 }
-@media all and (max-width: 600px) {
-  .main-header__navigation-list {
-    justify-content: space-between;
-  }
+@media all and (max-width: 680px) {
   .main-header__branding {
-    min-width: 35vw;
-    margin-left: -10vw;
-    margin-right: -10vw;
+    min-width: 30vw;
+    margin-left: -4%;
+    margin-right: -4%;
+    order: 2;
+  }
+  .main-header__branding  ~ * {
+    margin-left: 0;
   }
   .main-header .btn {
     padding-left: var(--size-20);
     padding-right: var(--size-20);
   }
 }
+
 .slideshow {
   position: relative;
-  margin-top: var(--size-90);
+  margin-top: calc(var(--size-80) * 3);
 }
 .slideshow__title {
   position: absolute;
-  bottom: 10%;
-  left: var(--size-60);
+  bottom: calc(2rem + 4%);
+  right: calc(var(--size-70) + var(--size-30));
+  align-items: flex-end;
 }
 .slideshow__images {
   height: 0;
-  width: 80%;
+  width: 100%;
   padding-bottom: 80%;
-  border-radius: 50%;
-  box-shadow: 0 var(--size-50) 0 var(--brand-1-mid);
+  border-radius: var(--size-70);
+  border: solid var(--size-30) var(--brand-2-mid);
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: -1;
 }
 .slideshow__images img {
   width: 100%;
   height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

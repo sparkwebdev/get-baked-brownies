@@ -1,9 +1,9 @@
 
 .main-footer {
-  border-top: solid var(--size-30) var(--brand-1-mid);
+  border-top: solid var(--size-30) var(--brand-2-mid);
   text-align: center;
   padding: 0 var(--size-70) var(--size-70) var(--size-70);
-  background-color: var(--brand-1-dark);
+  background-color: var(--brand-1);
   color: #fff;
 }
 .main-footer__logo {

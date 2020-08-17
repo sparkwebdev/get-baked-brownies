@@ -1,7 +1,7 @@
 
 :root {
   --brand-1         : #f300ff;
-  --brand-1-mid     : #f972ea;
+  --brand-1-mid     : #FF80E5;
   --brand-1-light   : #fcd2f8;
   --brand-1-dark    : #b138c3;
   --brand-2         : #2ca452;
@@ -63,6 +63,9 @@ body {
     background-size: 1200px auto;
   }
 }
+.site-wrap {
+  overflow: hidden;
+}
 
 /* a {
   color: currentColor;
@@ -117,28 +120,37 @@ h4 {
 
 /* Shared - Sections */
 .section {
-  padding: 0 var(--size-70) calc(var(--size-90) * 2) var(--size-70);
-  text-align: center;
-  border-top: solid var(--size-30) var(--brand-1-mid);
+  margin-top: calc(var(--size-90) * 2);
+  margin-bottom: calc(var(--size-90) * 2);
+  padding-left: var(--size-50);
+  padding-right: var(--size-50);
+}
+.section .wrapper {
+  padding: 0 var(--size-70) var(--size-90) var(--size-70);
+  border: solid var(--size-30) var(--brand-2-mid);
+  border-radius: var(--size-70);
+  background: rgba(255, 255, 242, 0.75);
 }
 .section__title:not(.section__title--inline),
 .section__title--inline span {
   color: var(--brand-1-mid);
-  background-color: var(--brand-4-mid);
+  background-color: var(--brand-4-light);
   display: inline-block;
   line-height: 1;
   padding: var(--size-40) var(--size-60) var(--size-10) var(--size-60);
-  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3-mid);
+  box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-1-mid);
   text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3-mid);
+  border-top: solid var(--size-10) var(--brand-2-mid);
+  border-right: solid var(--size-10) var(--brand-2-mid);
 }
 .section__title:not(.section__title--inline) {
-  margin-bottom: var(--size-80);
+  margin-bottom: var(--size-70);
   position: relative;
   top: -0.9em;
   margin-right: auto;
   margin-left: auto;
   font-size: var(--size-80);
-  font-size: clamp(1rem, 6vw, var(--size-80));
+  font-size: clamp(1rem, 8vw, var(--size-80));
 }
 .section__title--inline {
   display: flex;
@@ -160,7 +172,7 @@ button, .btn {
   background-color: var(--brand-1);
   color: var(--brand-2-light);
   padding: var(--size-50) var(--size-50) var(--size-40) var(--size-50);
-  min-width: 8em; /* Magic number to make buttons somewhat similar in length */
+  min-width: 7.6em; /* Magic number to make buttons somewhat similar in length */
   text-align: center;
   line-height: 1;
   display: inline-block;
@@ -174,7 +186,6 @@ button, .btn {
 button:hover, .btn:hover,
 button:focus, .btn:focus {
   background-color: var(--brand-1-dark);
-  color: var(--brand-4-mid);
   box-shadow: calc(var(--size-10)*-1) var(--size-10) 0 var(--brand-3);
   text-shadow: calc(var(--size-05)*-1) var(--size-05) 0 var(--brand-3);
 }

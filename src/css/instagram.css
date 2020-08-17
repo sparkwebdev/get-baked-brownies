@@ -1,11 +1,5 @@
-.section--instagram {
-  background: repeating-linear-gradient(
-    -55deg,
-    var(--brand-4),
-    var(--brand-4) 10px,
-    #dfe45d 10px,
-    #dfe45d 20px
-  );
+.instagram {
+  text-align: center;
 }
 .instagram__feed {
   display: flex;
@@ -15,7 +9,7 @@
 .instagram__feed li {
   width: 47%;
   border: solid 8px var(--brand-1);
-  box-shadow: calc(var(--size-20) * -1) var(--size-20) 0 var(--brand-3-mid);
+  box-shadow: calc(var(--size-20) * -1) var(--size-20) 0 var(--brand-1-mid);
 }
 @media all and (max-width: 599px) {
   .instagram__feed li:not(:first-child):not(:nth-child(2)) {

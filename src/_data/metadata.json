@@ -1,7 +1,7 @@
 {
   "title": "Get Baked Brownies",
   "url": "https://getbakedbrownies.co.uk",
-  "description": "Brownies to die for",
+  "description": "Delicious hand-made brownies",
   "author": {
     "name": "Get Baked Brownies",
     "email": "info@getbakedbrownies.co.uk",
@@ -10,20 +10,22 @@
     "telephone": "07711 223 344",
     "telephoneInternational": "+447711233455",
     "socialLinks": {
-      "Instagram": "https://www.instagram.com/getbakedbrownies/"
+      "instagram": "getbakedbrownies"
     }
   },
   "content": {
     "intro": {
-      "title": "Hand-made brownies to die for",
+      "title01": "Delicious",
+      "title02": "hand-made",
+      "title03": "brownies",
       "images": [
-        "brownies-01.jpg",
+        "brownies-03.jpg",
         "brownies-02.jpg",
-        "brownies-03.jpg"
+        "brownies-01.jpg"
       ]
     },
     "brownies": {
-      "title": "Our delicious brownies",
+      "title": "Our brownies",
       "products": [
         {
           "title": "Ferrero Rocher",
@@ -35,7 +37,7 @@
         },
         {
           "title": "Biscoff",
-          "description": "Our signature dark chocolate brownie packed full of white and milk chocolate chips and then coated with all three types of chocolate on top. Our decadent take on a classic",
+          "description": "Our signature dark chocolate brownie packed full of white and milk chocolate chips and then coated with all three types of chocolate on top. Our decadent take on a classic.",
           "image": "get-baked-brownie--biscoff.png",
           "pricePrefix": "Only ",
           "price": "£25.99",
@@ -43,7 +45,7 @@
         },
         {
           "title": "Malteser",
-          "description": "2 fudgy and rich dark chocolate brownies with a liquid salted caramel centre and a shimmery gold finish on top.",
+          "description": "Our signature dark chocolate brownie packed full of white and milk chocolate chips and then coated with all three types of chocolate on top. Our decadent take on a classic.",
           "image": "get-baked-brownie--malteser.png",
           "pricePrefix": "Only ",
           "price": "£26.99",
